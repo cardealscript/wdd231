@@ -3,9 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+    <title>WDD 231 - Web Frontend Development I - Cardeal Felisberto</title>
+
+    <!-- meta tags added -->
+    <meta name="description" content="WDD 231: Web Frontend Development I, my portfolio site by myself.">
+    <meta name="author" content="Cardeal Felisberto">
+
+    <!-- link google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- script js -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+
 </head>
+
 <body>
-    <h1>WDD 231 - Cardeal Felisberto</h1>
+
+    <header>
+
+        <div class="logo">
+            <img src="images/logo.svg" alt="Site Logo">
+            <span>Cardeal Felisberto</span>
+        </div>
+
+        <button id="hamburger" aria-label="Toggle navigation menu">&#9776;</button>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chamber-project/index.html"> Chamber Project</a></li>
+                <li><a href="final-project/index.html"> Final Project</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>Home</h1>
+
+        <div class="card">
+
+            <!-- About Me Card -->
+            <section>
+
+                <div class="card-header">
+                    <h2>About Me</h2>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <p>
+                            My name is Cardeal Felisberto, born on February 28, 2002, 
+                            in Maputo, Mozambique. My native language is Portuguese, and 
+                            I have acquired English through dedicated learning including 
+                            training and cultural exchange at the U.S. Embassy in Maputo, 
+                            where my passion for education abroad, especially in the 
+                            United States, was truly born.
+                        </p>
+
+                        <p>
+                            By a great blessing, I discovered the BYU-Pathway Worldwide 
+                            program in 2025 and completed PathwayConnect. 
+                            That experience opened the door to my Bachelor's Degree in 
+                            Software Development. I have already completed 5 courses,
+                            Introduction to Programming, Programming with Functions, 
+                            Programming with Classes, Web Fundamentals, and 
+                            Dynamic Web Fundamentals. I am currently taking my 6th and 
+                            final course, Web Frontend Development I, which will complete 
+                            my first certificate in Web and Computer Programming!
+                        </p>
+
+                        <p>
+                            I am a future Software Developer, deeply passionate about 
+                            technology and creativity. Lately I have been exploring 
+                            UX/UI Design and falling in love with the art of building 
+                            beautiful and functional web experiences. Every day I grow 
+                            closer to my dream of becoming a Web Frontend Developer
+                            and this is just the beginning!
+                        </p>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Student Photo -->
+            <section>
+
+                <div class="card-header">
+                    <h2>Student Photo</h2>
+                </div>
+                <img src="images/cardeal.png" alt="Cardeal Felisberto">
+
+            </section>
+
+            <!-- Web Certificate Courses-->
+            <section>
+
+                <div class="card-header">
+                    <h2>Web Certificate Courses</h2>
+                </div>
+
+                <div class="filter-buttons">
+                    <button id="all">All</button>
+                    <button id="wdd">WDD</button>
+                    <button id="cse">CSE</button>
+                </div>
+
+                <p id="total-credits"></p>
+
+                <div class="course-list" id="course-list"></div>
+
+            </section>
+
+
+        </div>
+    </main>
+
+    <footer>
+
+        
+         <!-- 1. social media -->
+        <div>
+            <a href="https://github.com/cardealscript" target="_blank">
+                <img src="images/github.svg" alt="GitHub">
+            </a>
+            
+            <a href="https://www.linkedin.com/in/cardealscript" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+            </a>
+
+            <a href="https://x.com/cardealscript" target="_blank">
+                <img src="images/twitter-x.svg" alt="X.com">
+            </a>
+
+            <a href="mailto:cardealfelisbertoc@gmail.com" target="_blank">
+                <img src="images/envelope-at.svg" alt="Email">
+            </a>
+        </div>
+
+
+    
+
+        <!-- 2. Dinamic copyright + name + country -->
+        <div>
+            <p>&#169; <span id="currentYear"></span> | Cardeal Felisberto | Moçambique</p>
+        </div>
+
+        <!-- 3. Last Modification -->
+        <div>
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+    
 </body>
+
 </html>

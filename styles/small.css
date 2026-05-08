@@ -1,0 +1,223 @@
+:root {
+    --primary-color: #0a1628;      /* very dark blue - header/footer */
+    --secondary-color: #1e3a5f;    /* dark blue - sections */
+    --accent-color: #2e6da4;       /* medium blue - buttons */
+    --highlight-color: #5ba3d9;    /* light blue - hover effects */
+    --background-color: #f0f4f8;   /* off white - page background */
+    --card-background: #ffffff;    /* white - cards */
+    --text-dark: #0a1628;          /* very dark blue - dark text */
+    --text-light: #ffffff;         /* white - light text */
+    --text-muted: #6b8cae;         /* muted blue - secondary text */
+    --completed-color: #1e3a5f;    /* dark blue - completed courses */
+    --not-completed: #5ba3d9;      /* light blue - incomplete courses */
+}
+
+/* ========== RESET & BASE ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-dark);
+}
+
+/* ========== HEADER ========== */
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo span {
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    color: var(--text-light);
+}
+
+/* ========== HAMBURGER BUTTON ========== */
+#hamburger {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* ========== NAVIGATION ========== */
+nav {
+    width: 100%;
+}
+
+nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    width: 100%;
+    padding: 1rem;
+    list-style: none;
+}
+
+nav.open ul {
+    display: flex;
+}
+
+nav ul li a {
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 0.5rem 0;
+    display: block;
+}
+
+nav ul li a:hover {
+    color: var(--highlight-color);
+}
+
+/* Active/current page wayfinding */
+nav ul li a.active {
+    color: var(--highlight-color);
+    font-weight: bold;
+}
+
+/* ========== MAIN ========== */
+main {
+    padding: 1rem;
+}
+
+main h1 {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* ========== CARDS ========== */
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card section {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header h2 {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+.card-body p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+/* ========== STUDENT PHOTO ========== */
+.card section img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* ========== FILTER BUTTONS ========== */
+.filter-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.filter-buttons button {
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filter-buttons button:hover {
+    background-color: var(--highlight-color);
+}
+
+/* ========== COURSE CARDS ========== */
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.course-card {
+    background-color: var(--not-completed);
+    color: var(--text-light);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.course-card.completed {
+    background-color: var(--completed-color);
+}
+
+/* ========== TOTAL CREDITS ========== */
+#total-credits {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* ========== FOOTER ========== */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer a img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
+
+footer a img:hover {
+    filter: brightness(0.7) invert(1);
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
