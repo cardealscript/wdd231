@@ -10,6 +10,7 @@
     --text-muted: #6b8cae;         /* muted blue - secondary text */
     --completed-color: #1e3a5f;    /* dark blue - completed courses */
     --not-completed: #5ba3d9;      /* light blue - incomplete courses */
+    --shadow: rgba(0, 0, 0, 0.1);  /* dark tranparent shadow to course-card */
 }
 
 /* ========== RESET & BASE ========== */
@@ -164,26 +165,70 @@ main h1 {
 
 /* ========== COURSE CARDS ========== */
 .course-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
 }
 
 .course-card {
-    background-color: var(--not-completed);
-    color: var(--text-light);
-    padding: 0.5rem 1rem;
+    background-color: var(--card-background);
+    border-left: 6px solid var(--not-completed);
     border-radius: 4px;
-    font-weight: bold;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 6px var(--shadow);
+    
 }
 
+
 .course-card.completed {
-    background-color: var(--completed-color);
+    border-left: 6px solid var(--completed-color);
+    background-color: var(--background-color);
 }
+
+/* /////////////////////////////////// */
+
+.course-card h3 {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    margin-bottom: 0.1rem;
+}
+
+.course-card h4 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 0.9rem;
+}
+
+.course-card p {
+    color: var(--completed-color);
+    font-size: 0.96rem;
+    line-height: 1.5;
+    margin-bottom: 1.1rem;
+}
+
+.tech-tag {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    padding: 0.3px 4px;
+    border-radius: 5px;
+    font-size: 0.75;
+    margin-right: 0.7rem;
+   
+}
+
+.status {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--completed-color);
+}
+
+/* /////////////////////////////////// */
 
 /* ========== TOTAL CREDITS ========== */
 #total-credits {
+    font-size: 1.2rem;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     font-weight: bold;
     color: var(--primary-color);
 }

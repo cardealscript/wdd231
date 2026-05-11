@@ -74,8 +74,8 @@
     /* ========== COURSE LIST - 3 columns ========== */
     .course-list {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 0.5rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
     }
 
     /* ========== FOOTER ========== */
