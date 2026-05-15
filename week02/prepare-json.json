@@ -1,0 +1,27 @@
+{
+    "family_name":"Conwana",
+    "move_in_date":"2025-07-04",
+    "number_of_people":3,
+    "visited_by_bishopric": false,
+    "family_member":[
+        {
+            "name": "Cardeal",
+            "gender": "Male",
+            "birthdate": "2002-02-08"
+        },
+
+        {
+        
+            "name": "Jefta",
+            "gender": "female",
+            "birthdate": "2005-11-23"
+        },
+        
+        {
+        
+            "name": "Izalda",
+            "gender": "female",
+            "birthdate": "2018-09-26"
+        }
+    ]
+}
