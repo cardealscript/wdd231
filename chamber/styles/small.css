@@ -46,7 +46,7 @@
   --member-bdr: #66bb6a;
 
   /* Typography */
-  --font-body:    'Segoe UI', Arial, sans-serif;
+  --font-body: 'Inter', 'Segoe UI', Arial, sans-serif;
 
   /* Spacing */
   --space-xs: 0.25rem;
@@ -283,7 +283,6 @@ p { margin: 0; }
 .page-hero {
   position: relative;
   height: 130px;
-  background-image: url('../images/herro-img01.jpg');
   background-size: cover;
   background-position: center;
   background-color: var(--blue-900); /* fallback if image missing */
@@ -326,6 +325,15 @@ p { margin: 0; }
 
 .hero-breadcrumb a:hover {
   color: var(--white);
+}
+
+.hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* ── 6. DIRECTORY CONTROLS ────────────────────── */
@@ -651,7 +659,7 @@ p { margin: 0; }
   border-top: 1px solid var(--blue-800);
   padding-top: var(--space-md);
   font-size: 0.75rem;
-  color: var(--blue-400);
+  color: var(--blue-200);
   display: flex;
   flex-direction: column;
   gap: var(--space-xs);

@@ -9,66 +9,55 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:title" content="Member Directory – Mozambique Business Chamber">
   <meta property="og:description" content="Browse all member businesses of the Mozambique Business Chamber in Maputo.">
-  <meta property="og:image" content="images/mbc-logo.svg">
+  <meta property="og:image" content="https://cardealscript.github.io/wdd231/chamber/images/mbc-logo.svg">
   <meta property="og:url" content="https://cardealscript.github.io/wdd231/chamber/directory.html">
 
   <title>Member Directory – Mozambique Business Chamber</title>
 
   <link rel="icon" href="images/mbc-logo.svg">
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
   <!-- Stylesheets -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
-
 </head>
-
 <body>
 
   <!-- ① TOP BAR -->
   <div class="top-bar">
-
     <div class="top-bar-contact">
-
       <span>
-        <img src="images/telephone.svg" alt="">+258 84 000 0000
+        <img src="images/telephone.svg" alt=""> +258 84 000 0000
       </span>
-      
       <span>
         <img src="images/envelope-at.svg" alt=""> info@mbc.co.mz
       </span>
-
       <span>
         <img src="images/geo-alt.svg" alt=""> Av. Julius Nyerere, Maputo
       </span>
-
     </div>
-
     <div class="top-bar-social">
-
       <a href="#" aria-label="Facebook">
         <img src="images/facebook.svg" alt="">
       </a>
-
-      <a href="#" aria-label="twitter">
+      <a href="#" aria-label="Twitter">
         <img src="images/twitter-x.svg" alt="">
       </a>
-
       <a href="#" aria-label="LinkedIn">
         <img src="images/linkedin.svg" alt="">
       </a>
-
     </div>
-
   </div>
 
   <!-- ② HEADER -->
   <header class="site-header">
-
     <div class="logo">
-
-        <img src="images/mbc-logo.svg" alt="mbc-logo">
-
+      <img src="images/mbc-logo.svg" alt="Mozambique Business Chamber logo">
       <div class="logo-text">
         <span class="logo-name">Mozambique Business Chamber</span>
         <span class="logo-sub">Maputo · Est. 2025</span>
@@ -89,31 +78,37 @@
     </nav>
   </header>
 
-  <!-- ③ HERO -->
-  <section class="page-hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <p class="hero-breadcrumb"><a href="index.html">Home</a> / Directory</p>
-      <h1>Member Directory</h1>
-    </div>
-  </section>
+  <!-- MAIN — contém hero + controls + cards (só 1 main permitido) -->
+  <main>
 
-  <!-- ④ CONTROLS -->
-  <div class="directory-controls">
-    <p class="member-count">Showing <strong id="member-count">0</strong> members</p>
-    <div class="toggle-group" role="group" aria-label="View toggle">
-      <button class="toggle-btn active" id="btn-grid" aria-label="Grid view" aria-pressed="true">
-        ▦ Grid
-      </button>
-      <button class="toggle-btn" id="btn-list" aria-label="List view" aria-pressed="false">
-        ☰ List
-      </button>
-    </div>
-  </div>
+    <!-- ③ HERO -->
+    <section class="page-hero">
+      <img src="images/herro-img01.jpg" alt="Maputo city skyline" class="hero-img">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-breadcrumb"><a href="index.html">Home</a> / Directory</p>
+        <h1>Member Directory</h1>
+      </div>
+    </section>
 
-  <!-- ⑤ MEMBERS AREA -->
-  <main id="members-container" class="members-grid">
-    <!-- Cards injected by directory.js -->
+    <!-- ④ CONTROLS -->
+    <div class="directory-controls">
+      <p class="member-count">Showing <strong id="member-count">0</strong> members</p>
+      <div class="toggle-group" role="group" aria-label="View toggle">
+        <button class="toggle-btn active" id="btn-grid" aria-label="Grid view" aria-pressed="true">
+          ▦ Grid
+        </button>
+        <button class="toggle-btn" id="btn-list" aria-label="List view" aria-pressed="false">
+          ☰ List
+        </button>
+      </div>
+    </div>
+
+    <!-- ⑤ MEMBERS AREA -->
+    <div id="members-container" class="members-grid">
+      <!-- Cards injected by directory.js -->
+    </div>
+
   </main>
 
   <!-- ⑥ FOOTER -->
@@ -127,7 +122,7 @@
           <a href="#" aria-label="Facebook"><img src="images/facebook.svg" alt=""></a>
           <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt=""></a>
           <a href="#" aria-label="LinkedIn"><img src="images/linkedin.svg" alt=""></a>
-          <a href="#" aria-label="twitter"><img src="images/twitter-x.svg" alt=""></a>
+          <a href="#" aria-label="Twitter"><img src="images/twitter-x.svg" alt=""></a>
         </div>
       </div>
       <div class="footer-col">
@@ -153,6 +148,6 @@
     </div>
   </footer>
 
-  <script src="scripts/directory.js"></script>
+  <script src="scripts/directory.js" defer></script>
 </body>
 </html>
