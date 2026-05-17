@@ -1,0 +1,205 @@
+/* ================================================
+   MBC — Mozambique Business Chamber
+   larger.css  |  Tablet & Desktop (min-width: 768px+)
+   Author: Cardeal Felisberto  |  WDD 231
+   ================================================ */
+
+/* ── TABLET 768px+ ────────────────────────────── */
+@media (min-width: 768px) {
+
+  /* Top bar */
+  .top-bar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.35rem 1.5rem;
+  }
+
+  .top-bar-contact {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  /* Header */
+  .site-header {
+    padding: 0.6rem 1.5rem;
+  }
+
+  /* Hide hamburger, show nav */
+  .hamburger {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.2rem;
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .main-nav a {
+    font-size: 0.88rem;
+    padding: 0.35rem 0.7rem;
+  }
+
+  /* Last nav link styled as Join button */
+  .main-nav a:last-child {
+    background: var(--blue-700);
+    color: var(--white);
+    border-radius: var(--radius-md);
+    padding: 0.35rem 1rem;
+  }
+
+  .main-nav a:last-child:hover {
+    background: var(--blue-600);
+    text-decoration: none;
+  }
+
+  /* Hero */
+  .page-hero {
+    height: 140px;
+  }
+
+  .hero-content {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.9rem;
+  }
+
+  /* Controls */
+  .directory-controls {
+    padding: 1.25rem 1.5rem 0;
+  }
+
+  /* Members grid — 2 columns */
+  .members-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.25rem 1.5rem;
+  }
+
+  .members-list {
+    padding: 1rem 1.5rem;
+  }
+
+  /* List view — show address and phone */
+  .member-row {
+    grid-template-columns: auto 2fr 2fr 1fr auto;
+    gap: 0 1rem;
+  }
+
+  .row-addr,
+  .row-phone {
+    display: block;
+    color: var(--gray-500);
+  }
+
+  .row-badge {
+    grid-column: auto;
+  }
+
+  /* Footer grid — 3 columns */
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .site-footer {
+    padding: 2rem 1.5rem 1.25rem;
+  }
+
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* ── DESKTOP 1024px+ ──────────────────────────── */
+@media (min-width: 1024px) {
+
+  /* Top bar */
+  .top-bar {
+    padding: 0.35rem 2rem;
+  }
+
+  /* Header */
+  .site-header {
+    padding: 0.6rem 2rem;
+  }
+
+  /* Hero */
+  .page-hero {
+    height: 140px;
+  }
+
+  .hero-content {
+    padding: 1.25rem 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.1rem;
+  }
+
+  /* Controls */
+  .directory-controls {
+    padding: 1.5rem 2rem 0;
+  }
+
+  /* Members grid — 3 columns */
+  .members-grid {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1.5rem 2rem;
+  }
+
+  .members-list {
+    padding: 1rem 2rem;
+  }
+
+  /* Footer */
+  .site-footer {
+    padding: 2.5rem 2rem 1.25rem;
+  }
+}
+
+/* ── WIDE 1200px+ ─────────────────────────────── */
+@media (min-width: 1200px) {
+
+  .top-bar {
+    padding: 0.35rem 2.5rem;
+  }
+
+  .site-header {
+    padding: 0.6rem 2.5rem;
+  }
+
+  .hero-content {
+    padding: 1.25rem 2.5rem;
+    max-width: 1200px;
+  }
+
+  .directory-controls {
+    padding: 1.5rem 2.5rem 0;
+  }
+
+  /* Members grid — 4 columns */
+  .members-grid {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1.5rem 2.5rem;
+  }
+
+  .members-list {
+    padding: 1rem 2.5rem;
+  }
+
+  .site-footer {
+    padding: 2.5rem 2.5rem 1.25rem;
+  }
+}

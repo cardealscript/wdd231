@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "Mozal Aluminium",
+    "address": "Beluluane Industrial Park, Maputo",
+    "phone": "+258 21 780 000",
+    "website": "https://www.mozal.com",
+    "image": "mozal.webp",
+    "membership": 3,
+    "city": "Maputo",
+    "description": "One of the largest aluminium smelters in Africa."
+  },
+  {
+    "id": 2,
+    "name": "Telecomunicações de Moçambique",
+    "address": "Av. Eduardo Mondlane, 123, Maputo",
+    "phone": "+258 21 431 000",
+    "website": "https://www.tdm.mz",
+    "image": "tdm.webp",
+    "membership": 3,
+    "city": "Maputo",
+    "description": "National telecommunications provider of Mozambique."
+  },
+  {
+    "id": 3,
+    "name": "Beira Port Logistics",
+    "address": "Porto da Beira, Sofala, Beira",
+    "phone": "+258 23 312 500",
+    "website": "https://www.beiraport.co.mz",
+    "image": "beira-port.webp",
+    "membership": 2,
+    "city": "Beira",
+    "description": "Leading port and logistics company in central Mozambique."
+  },
+  {
+    "id": 4,
+    "name": "Savana Tech Solutions",
+    "address": "Av. Mao Tse Tung, 400, Maputo",
+    "phone": "+258 84 555 0101",
+    "website": "https://www.savanatech.co.mz",
+    "image": "savana-tech.webp",
+    "membership": 2,
+    "city": "Maputo",
+    "description": "Software development and IT consulting services."
+  },
+  {
+    "id": 5,
+    "name": "Nampula Agro Export",
+    "address": "Rua dos Continuadores, 78, Nampula",
+    "phone": "+258 26 218 300",
+    "website": "https://www.nampulaagro.co.mz",
+    "image": "nampula-agro.webp",
+    "membership": 2,
+    "city": "Nampula",
+    "description": "Agricultural exports including cashew and sesame."
+  },
+  {
+    "id": 6,
+    "name": "Construções do Índico",
+    "address": "Av. Karl Marx, 210, Maputo",
+    "phone": "+258 21 490 800",
+    "website": "https://www.indico.co.mz",
+    "image": "indico.webp",
+    "membership": 1,
+    "city": "Maputo",
+    "description": "Civil construction and infrastructure development company."
+  },
+  {
+    "id": 7,
+    "name": "Northern Freight Co.",
+    "address": "Av. da Independência, 55, Pemba",
+    "phone": "+258 272 20 100",
+    "website": "https://www.northernfreight.co.mz",
+    "image": "northern-freight.webp",
+    "membership": 1,
+    "city": "Pemba",
+    "description": "Freight and cargo transportation across northern Mozambique."
+  },
+  {
+    "id": 8,
+    "name": "Zambézia Green Energy",
+    "address": "Rua Samora Machel, 30, Quelimane",
+    "phone": "+258 24 213 700",
+    "website": "https://www.zgreenenergy.co.mz",
+    "image": "zambezia-energy.webp",
+    "membership": 1,
+    "city": "Quelimane",
+    "description": "Renewable energy projects and solar power solutions."
+  },
+  {
+    "id": 9,
+    "name": "MapFinance Group",
+    "address": "Av. 25 de Setembro, 800, Maputo",
+    "phone": "+258 21 350 200",
+    "website": "https://www.mapfinance.co.mz",
+    "image": "mapfinance.webp",
+    "membership": 3,
+    "city": "Maputo",
+    "description": "Financial services, investment and business consulting."
+  }
+]
