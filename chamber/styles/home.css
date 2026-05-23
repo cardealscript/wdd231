@@ -1,0 +1,362 @@
+/* ================================================
+   MBC — Mozambique Business Chamber
+   home.css  |  Home page specific styles
+   Author: Cardeal Felisberto  |  WDD 231
+   ================================================ */
+
+/* ── HERO ─────────────────────────────────────── */
+.home-hero {
+  position: relative;
+  height: 220px;
+  background-color: var(--blue-900);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.home-hero .hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  max-width: none;
+}
+
+.home-hero .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(8,20,45,0.82) 40%, rgba(8,20,45,0.45));
+}
+
+.home-hero .hero-content {
+  position: relative;
+  z-index: 2;
+  padding: var(--space-xl) var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  max-width: 600px;
+}
+
+.home-hero h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.15;
+}
+
+.hero-sub {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.80);
+  line-height: 1.5;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: var(--blue-400);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.65rem 1.5rem;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  align-self: flex-start;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.cta-btn:hover {
+  background: var(--blue-300);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+/* ── HOME GRID ────────────────────────────────── */
+.home-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  padding: var(--space-xl) var(--space-md);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--blue-900);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-xs);
+  border-bottom: 2px solid var(--blue-100);
+}
+
+.section-title img {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 0.3rem;
+  filter: invert(13%) sepia(50%) saturate(800%) hue-rotate(200deg);
+}
+
+h2.section-title {
+  display: flex !important;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* ── WEATHER ──────────────────────────────────── */
+.home-weather {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.weather-now {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.weather-temp {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--blue-800);
+  line-height: 1;
+}
+
+.weather-icon img { width: 64px; height: 64px; }
+
+.weather-desc {
+  font-size: 1rem;
+  color: var(--gray-600);
+  text-transform: capitalize;
+}
+
+.weather-loading {
+  color: var(--gray-400);
+  font-size: 0.88rem;
+}
+
+.weather-forecast {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-sm);
+}
+
+.forecast-day {
+  background: var(--blue-700);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm);
+  text-align: center;
+  border: 1px solid var(--blue-100);
+}
+
+.forecast-day .f-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--blue-50);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.forecast-day img { width: 40px; height: 40px; margin: 0.25rem auto; }
+
+.forecast-day .f-temp {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--blue-50);
+}
+
+/* ── EVENTS ───────────────────────────────────── */
+.home-events {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.event-card {
+  display: flex;
+  gap: var(--space-md);
+  align-items: flex-start;
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.event-card:last-child { border-bottom: none; }
+
+.event-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--blue-700);
+  color: var(--white);
+  border-radius: var(--radius-md);
+  padding: 0.4rem 0.7rem;
+  min-width: 48px;
+  flex-shrink: 0;
+}
+
+.event-day {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.event-month {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.85;
+}
+
+.event-info h3 {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--blue-900);
+  margin-bottom: 0.2rem;
+}
+
+.event-info p {
+  font-size: 0.80rem;
+  color: var(--gray-500);
+  line-height: 1.4;
+}
+
+/* ── SPOTLIGHTS ───────────────────────────────── */
+.home-spotlights {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.spotlights-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+.spotlight-card {
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.spotlight-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.spotlight-logo {
+  position: relative;
+  width: 100%;
+  background: var(--blue-50);
+  overflow: hidden;
+  
+}
+
+.spotlight-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.spotlight-initials {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--blue-400);
+}
+
+.spotlight-body {
+  padding: var(--space-md);
+  background: var(--blue-50);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.spotlight-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--blue-900);
+}
+
+.spotlight-detail {
+  font-size: 0.78rem;
+  color: var(--gray-600);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+
+.spotlight-detail img {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  filter: invert(45%) sepia(60%) saturate(400%) hue-rotate(190deg);
+}
+
+.spotlight-link {
+  font-size: 0.78rem;
+  color: var(--blue-600);
+  font-weight: 500;
+}
+
+.spotlight-link:hover { text-decoration: underline; }
+
+.spotlight-badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  align-self: flex-start;
+}
+
+/* ── LARGER SCREENS (home.css additions) ──────── */
+@media (min-width: 768px) {
+  .home-hero { height: 260px; }
+  .home-hero h1 { font-size: 2.8rem; }
+  .hero-sub { font-size: 1.1rem; }
+  .home-hero .hero-content { padding: var(--space-xl) var(--space-lg); }
+
+  .home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    padding: var(--space-xl) var(--space-lg);
+  }
+
+  .home-weather  { grid-column: 1; grid-row: 1; }
+  .home-events   { grid-column: 2; grid-row: 1; }
+  .home-spotlights { grid-column: 1 / -1; grid-row: 2; }
+
+  .spotlights-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .home-hero { height: 260px; }
+  .home-hero h1 { font-size: 3.2rem; }
+  .home-hero .hero-content { padding: var(--space-xl) var(--space-xl); }
+  .home-grid { padding: var(--space-xl) var(--space-xl); gap: var(--space-xl); }
+}

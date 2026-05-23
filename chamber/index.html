@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to the Mozambique Business Chamber – connecting businesses in Maputo and beyond.">
+  <meta name="author" content="Cardeal Felisberto">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mozambique Business Chamber – Home">
+  <meta property="og:description" content="Connecting businesses across Mozambique. Join the MBC today.">
+  <meta property="og:image" content="https://cardealscript.github.io/wdd231/chamber/images/mbc-logo.svg">
+  <meta property="og:url" content="https://cardealscript.github.io/wdd231/chamber/index.html">
+
+  <title>Home – Mozambique Business Chamber</title>
+
+  <link rel="icon" href="images/mbc-logo.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+  <link rel="stylesheet" href="styles/home.css">
+
+  <!-- Script -->
+  <script src="scripts/home.js" defer></script>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="top-bar-contact">
+      <span><img src="images/telephone.svg" alt=""> +258 84 000 0000</span>
+      <span><img src="images/envelope-at.svg" alt=""> info@mbc.co.mz</span>
+      <span><img src="images/geo-alt.svg" alt=""> Av. Julius Nyerere, Maputo</span>
+    </div>
+    <div class="top-bar-social">
+      <a href="#" aria-label="Facebook"><img src="images/facebook.svg" alt=""></a>
+      <a href="#" aria-label="Twitter"><img src="images/twitter-x.svg" alt=""></a>
+      <a href="#" aria-label="LinkedIn"><img src="images/linkedin.svg" alt=""></a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="logo">
+      <img src="images/mbc-logo.svg" alt="Mozambique Business Chamber logo">
+      <div class="logo-text">
+        <span class="logo-name">Mozambique Business Chamber</span>
+        <span class="logo-sub">Maputo · Est. 2025</span>
+      </div>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html" class="active" aria-current="page">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="discover.html">Discover</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="home-hero">
+      <img src="images/herro-img01.jpg" alt="Maputo city skyline" class="hero-img">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Growing Business<br>in Mozambique</h1>
+        <p class="hero-sub">Connect, collaborate, and thrive with Maputo's leading business network.</p>
+        <a href="join.html" class="cta-btn">Join the Chamber →</a>
+      </div>
+    </section>
+
+    <!-- HOME GRID -->
+    <div class="home-grid">
+
+      <!-- WEATHER -->
+      <section class="home-weather" aria-label="Current weather">
+        <h2 class="section-title"><img src="images/geo-alt-fill.svg" alt=""> Maputo Weather</h2>
+        <div id="weather-current" class="weather-now">
+          <p class="weather-loading">Loading weather…</p>
+        </div>
+        <div id="weather-forecast" class="weather-forecast"></div>
+      </section>
+
+      <!-- EVENTS -->
+      <section class="home-events" aria-label="Current events">
+        <h2 class="section-title"><img src="images/calendar-day.svg" alt=""> Current Events</h2>
+        <div class="events-list">
+          <article class="event-card">
+            <div class="event-date"><span class="event-day">14</span><span class="event-month">Jun</span></div>
+            <div class="event-info">
+              <h3>Annual Business Summit</h3>
+              <p>Join leaders from across Mozambique for networking and keynotes at the Radisson Blu, Maputo.</p>
+            </div>
+          </article>
+          <article class="event-card">
+            <div class="event-date"><span class="event-day">28</span><span class="event-month">Jun</span></div>
+            <div class="event-info">
+              <h3>SME Finance Workshop</h3>
+              <p>Learn about funding opportunities and financial tools available to small businesses in Maputo.</p>
+            </div>
+          </article>
+          <article class="event-card">
+            <div class="event-date"><span class="event-day">10</span><span class="event-month">Jul</span></div>
+            <div class="event-info">
+              <h3>Tech & Innovation Expo</h3>
+              <p>Showcasing the latest in technology and digital transformation for Mozambican enterprises.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SPOTLIGHTS -->
+      <section class="home-spotlights" aria-label="Member spotlights">
+        <h2 class="section-title">⭐ Member Spotlights</h2>
+        <div id="spotlights-container" class="spotlights-grid">
+          <p class="weather-loading">Loading spotlights…</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h2>MBC</h2>
+        <p>Mozambique Business Chamber</p>
+        <p>Maputo, Mozambique</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><img src="images/facebook.svg" alt=""></a>
+          <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt=""></a>
+          <a href="#" aria-label="LinkedIn"><img src="images/linkedin.svg" alt=""></a>
+          <a href="#" aria-label="Twitter"><img src="images/twitter-x.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Contact</h2>
+        <p><img src="images/whatsapp.svg" alt=""> +258 84 000 0000</p>
+        <p><img src="images/envelope-at.svg" alt=""> info@mbc.co.mz</p>
+        <p><img src="images/geo-alt.svg" alt=""> Maputo, MZ</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Cardeal Felisberto · WDD 231</p>
+      <p>© <span id="footer-year"></span> Mozambique Business Chamber</p>
+      <p>Last modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+
+</body>
+</html>
