@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join the Mozambique Business Chamber and connect with leading businesses in Maputo.">
+  <meta name="author" content="Cardeal Felisberto">
+  <meta property="og:title" content="Join the Mozambique Business Chamber Today">
+  <meta property="og:description" content="Apply for membership and grow your business with the MBC network in Maputo.">
+  <meta property="og:image" content="https://cardealscript.github.io/wdd231/chamber/images/mbc-logo.svg">
+  <meta property="og:url" content="https://cardealscript.github.io/wdd231/chamber/join.html">
+  <title>Join – Mozambique Business Chamber</title>
+  <link rel="icon" href="images/mbc-logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+  <link rel="stylesheet" href="styles/join.css">
+  <script src="scripts/join.js" defer></script>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="top-bar-contact">
+      <span><img src="images/telephone.svg" alt=""> +258 84 000 0000</span>
+      <span><img src="images/envelope-at.svg" alt=""> info@mbc.co.mz</span>
+      <span><img src="images/geo-alt.svg" alt=""> Av. Julius Nyerere, Maputo</span>
+    </div>
+    <div class="top-bar-social">
+      <a href="#" aria-label="Facebook"><img src="images/facebook.svg" alt=""></a>
+      <a href="#" aria-label="Twitter"><img src="images/twitter-x.svg" alt=""></a>
+      <a href="#" aria-label="LinkedIn"><img src="images/linkedin.svg" alt=""></a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="logo">
+      <img src="images/mbc-logo.svg" alt="Mozambique Business Chamber logo">
+      <div class="logo-text">
+        <span class="logo-name">Mozambique Business Chamber</span>
+        <span class="logo-sub">Maputo · Est. 2025</span>
+      </div>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="discover.html">Discover</a>
+      <a href="join.html" class="active" aria-current="page">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="page-hero">
+      <img src="images/herro-img01.jpg" alt="Maputo city skyline" class="hero-img">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-breadcrumb"><a href="index.html">Home</a> / Join</p>
+        <h1>Join the Chamber</h1>
+      </div>
+    </section>
+
+    <!-- JOIN LAYOUT -->
+    <div class="join-layout">
+
+      <!-- FORM -->
+      <section class="join-form-section">
+        <h2>Membership Application</h2>
+        <form method="get" action="thankyou.html">
+
+          <label for="fname">
+            First Name *
+            <input type="text" id="fname" name="fname" title="Enter your first name"
+              autocomplete="given-name" required>
+          </label>
+
+          <label for="lname">
+            Last Name *
+            <input type="text" id="lname" name="lname" title="Enter your last name"
+              autocomplete="family-name" required>
+          </label>
+
+          <label for="org-title">
+            Organizational Title
+            <input type="text" id="org-title" name="org-title"
+              title="Enter your title within your organization (min. 7 characters, letters, hyphens and spaces only)"
+              autocomplete="organization-title"
+              pattern="[A-Za-z\- ]{7,}">
+          </label>
+
+          <label for="email">
+            Email Address *
+            <input type="email" id="email" name="email" title="Enter your email address"
+              autocomplete="email" placeholder="example@company.co.mz" required>
+          </label>
+
+          <label for="phone">
+            Mobile Phone *
+            <input type="tel" id="phone" name="phone" title="Enter your mobile phone number"
+              autocomplete="tel" required>
+          </label>
+
+          <label for="org-name">
+            Business / Organization Name *
+            <input type="text" id="org-name" name="org-name" title="Enter your business or organization name"
+              autocomplete="organization" required>
+          </label>
+
+          <label for="membership">
+            Membership Level *
+            <select id="membership" name="membership" title="Select a membership level" required>
+              <option value="" disabled selected>-- Select a level --</option>
+              <option value="np">NP Membership – Non-Profit (Free)</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select>
+          </label>
+
+          <label for="description">
+            Business Description
+            <textarea id="description" name="description"
+              title="Briefly describe your business or organization"
+              rows="4"></textarea>
+          </label>
+
+          <input type="hidden" id="timestamp" name="timestamp">
+
+          <input type="submit" value="Submit Application">
+        </form>
+      </section>
+
+      <!-- MEMBERSHIP CARDS -->
+      <aside class="membership-cards">
+        <h2>Membership Levels</h2>
+        <div class="cards-grid">
+
+          <div class="mem-card mem-np">
+            <div class="mem-card-header">
+              <span class="mem-icon">🤝</span>
+              <h3>NP Membership</h3>
+              <p class="mem-price">Free</p>
+            </div>
+            <p class="mem-tagline">For non-profit organizations</p>
+            <a href="#" class="mem-info-btn" data-modal="modal-np">Learn More</a>
+          </div>
+
+          <div class="mem-card mem-bronze">
+            <div class="mem-card-header">
+              <span class="mem-icon">🥉</span>
+              <h3>Bronze Membership</h3>
+              <p class="mem-price">500 MT/yr</p>
+            </div>
+            <p class="mem-tagline">Start your journey</p>
+            <a href="#" class="mem-info-btn" data-modal="modal-bronze">Learn More</a>
+          </div>
+
+          <div class="mem-card mem-silver">
+            <div class="mem-card-header">
+              <span class="mem-icon">🥈</span>
+              <h3>Silver Membership</h3>
+              <p class="mem-price">1,500 MT/yr</p>
+            </div>
+            <p class="mem-tagline">Grow your network</p>
+            <a href="#" class="mem-info-btn" data-modal="modal-silver">Learn More</a>
+          </div>
+
+          <div class="mem-card mem-gold">
+            <div class="mem-card-header">
+              <span class="mem-icon">🥇</span>
+              <h3>Gold Membership</h3>
+              <p class="mem-price">3,000 MT/yr</p>
+            </div>
+            <p class="mem-tagline">Maximum visibility</p>
+            <a href="#" class="mem-info-btn" data-modal="modal-gold">Learn More</a>
+          </div>
+
+        </div>
+      </aside>
+    </div>
+
+    <!-- MODALS -->
+    <dialog id="modal-np">
+      <button class="modal-close" id="close-np" aria-label="Close">✕</button>
+      <h2>🤝 NP Membership</h2>
+      <p class="modal-price">Free</p>
+      <ul>
+        <li>✅ Directory listing</li>
+        <li>✅ Access to chamber events</li>
+        <li>✅ Monthly newsletter</li>
+        <li>✅ Community networking</li>
+      </ul>
+      <p class="modal-note">Available exclusively for registered non-profit organizations in Mozambique.</p>
+    </dialog>
+
+    <dialog id="modal-bronze">
+      <button class="modal-close" id="close-bronze" aria-label="Close">✕</button>
+      <h2>🥉 Bronze Membership</h2>
+      <p class="modal-price">500 MT / year</p>
+      <ul>
+        <li>✅ All NP benefits</li>
+        <li>✅ Business directory listing</li>
+        <li>✅ 1 training session/year</li>
+        <li>✅ 10% discount on chamber events</li>
+        <li>✅ Access to member forums</li>
+      </ul>
+    </dialog>
+
+    <dialog id="modal-silver">
+      <button class="modal-close" id="close-silver" aria-label="Close">✕</button>
+      <h2>🥈 Silver Membership</h2>
+      <p class="modal-price">1,500 MT / year</p>
+      <ul>
+        <li>✅ All Bronze benefits</li>
+        <li>✅ Featured directory listing</li>
+        <li>✅ 3 training sessions/year</li>
+        <li>✅ Social media promotion</li>
+        <li>✅ 20% discount on chamber events</li>
+        <li>✅ Monthly business luncheon</li>
+      </ul>
+    </dialog>
+
+    <dialog id="modal-gold">
+      <button class="modal-close" id="close-gold" aria-label="Close">✕</button>
+      <h2>🥇 Gold Membership</h2>
+      <p class="modal-price">3,000 MT / year</p>
+      <ul>
+        <li>✅ All Silver benefits</li>
+        <li>✅ Homepage spotlight placement</li>
+        <li>✅ Unlimited training sessions</li>
+        <li>✅ Priority event sponsorship</li>
+        <li>✅ Dedicated social media campaign</li>
+        <li>✅ Annual advertising package</li>
+        <li>✅ VIP access to all chamber events</li>
+      </ul>
+    </dialog>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h2>MBC</h2>
+        <p>Mozambique Business Chamber</p>
+        <p>Maputo, Mozambique</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><img src="images/facebook.svg" alt=""></a>
+          <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt=""></a>
+          <a href="#" aria-label="LinkedIn"><img src="images/linkedin.svg" alt=""></a>
+          <a href="#" aria-label="Twitter"><img src="images/twitter-x.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Contact</h2>
+        <p><img src="images/whatsapp.svg" alt=""> +258 84 000 0000</p>
+        <p><img src="images/envelope-at.svg" alt=""> info@mbc.co.mz</p>
+        <p><img src="images/geo-alt.svg" alt=""> Maputo, MZ</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Cardeal Felisberto · WDD 231</p>
+      <p>© <span id="footer-year"></span> Mozambique Business Chamber</p>
+      <p>Last modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+
+</body>
+</html>

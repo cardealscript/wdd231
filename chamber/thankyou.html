@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thank you for applying to the Mozambique Business Chamber.">
+  <meta name="author" content="Cardeal Felisberto">
+  <meta property="og:title" content="Thank You – Mozambique Business Chamber">
+  <meta property="og:description" content="Your membership application has been received.">
+  <meta property="og:image" content="https://cardealscript.github.io/wdd231/chamber/images/mbc-logo.svg">
+  <meta property="og:url" content="https://cardealscript.github.io/wdd231/chamber/thankyou.html">
+  <title>Thank You – Mozambique Business Chamber</title>
+  <link rel="icon" href="images/mbc-logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+  <link rel="stylesheet" href="styles/join.css">
+  <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="top-bar-contact">
+      <span><img src="images/telephone.svg" alt=""> +258 84 000 0000</span>
+      <span><img src="images/envelope-at.svg" alt=""> info@mbc.co.mz</span>
+      <span><img src="images/geo-alt.svg" alt=""> Av. Julius Nyerere, Maputo</span>
+    </div>
+    <div class="top-bar-social">
+      <a href="#" aria-label="Facebook"><img src="images/facebook.svg" alt=""></a>
+      <a href="#" aria-label="Twitter"><img src="images/twitter-x.svg" alt=""></a>
+      <a href="#" aria-label="LinkedIn"><img src="images/linkedin.svg" alt=""></a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="logo">
+      <img src="images/mbc-logo.svg" alt="Mozambique Business Chamber logo">
+      <div class="logo-text">
+        <span class="logo-name">Mozambique Business Chamber</span>
+        <span class="logo-sub">Maputo · Est. 2025</span>
+      </div>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="discover.html">Discover</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <img src="images/herro-img01.jpg" alt="Maputo city skyline" class="hero-img">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-breadcrumb"><a href="index.html">Home</a> / Thank You</p>
+        <h1>Application Received!</h1>
+      </div>
+    </section>
+
+    <div class="thankyou-container">
+      <div class="thankyou-card">
+        <div class="thankyou-icon">🎉</div>
+        <h2>Thank You for Applying!</h2>
+        <p>We have received your membership application and will be in touch shortly.</p>
+
+        <div class="submission-details">
+          <h3>Your Submission</h3>
+          <dl>
+            <dt>First Name</dt>
+            <dd id="td-fname">—</dd>
+            <dt>Last Name</dt>
+            <dd id="td-lname">—</dd>
+            <dt>Email</dt>
+            <dd id="td-email">—</dd>
+            <dt>Mobile Phone</dt>
+            <dd id="td-phone">—</dd>
+            <dt>Business Name</dt>
+            <dd id="td-org-name">—</dd>
+            <dt>Submitted</dt>
+            <dd id="td-timestamp">—</dd>
+          </dl>
+        </div>
+
+        <a href="index.html" class="cta-btn">← Back to Home</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h2>MBC</h2>
+        <p>Mozambique Business Chamber</p>
+        <p>Maputo, Mozambique</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><img src="images/facebook.svg" alt=""></a>
+          <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt=""></a>
+          <a href="#" aria-label="LinkedIn"><img src="images/linkedin.svg" alt=""></a>
+          <a href="#" aria-label="Twitter"><img src="images/twitter-x.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Contact</h2>
+        <p><img src="images/whatsapp.svg" alt=""> +258 84 000 0000</p>
+        <p><img src="images/envelope-at.svg" alt=""> info@mbc.co.mz</p>
+        <p><img src="images/geo-alt.svg" alt=""> Maputo, MZ</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Cardeal Felisberto · WDD 231</p>
+      <p>© <span id="footer-year"></span> Mozambique Business Chamber</p>
+      <p>Last modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+
+</body>
+</html>
