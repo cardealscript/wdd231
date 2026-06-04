@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CapitalFlow Site Plan — Personal Finance Manager website planning document." />
+  <meta name="author" content="Cardeal Felisberto" />
+  <title>CapitalFlow — Site Plan</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #0a2540;
+      --accent: #00c896;
+      --accent-light: #e6fdf7;
+      --text: #1a1a2e;
+      --muted: #5a6a7a;
+      --bg: #f4f7fb;
+      --white: #ffffff;
+      --border: #d1dce8;
+      --font-heading: 'DM Serif Display', serif;
+      --font-body: 'DM Sans', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    /* HEADER */
+    header {
+      background: var(--primary);
+      color: var(--white);
+      padding: 3rem 2rem 2.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0; right: 0;
+      height: 40px;
+      background: var(--bg);
+      clip-path: ellipse(55% 100% at 50% 100%);
+    }
+    header .logo-mark {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 1rem;
+    }
+    header .logo-mark span {
+      width: 38px; height: 38px;
+      background: var(--accent);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 1.1rem; color: var(--primary);
+    }
+    header h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 5vw, 3rem);
+      letter-spacing: -0.5px;
+    }
+    header p {
+      font-size: 1rem;
+      color: #a8bcd0;
+      margin-top: 0.4rem;
+    }
+
+    /* MAIN */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    /* SECTION */
+    section {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem 2rem 1.8rem;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+    section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 5px; height: 100%;
+      background: var(--accent);
+      border-radius: 16px 0 0 16px;
+    }
+
+    h2 {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    h2 .icon {
+      width: 32px; height: 32px;
+      background: var(--accent-light);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    p { margin-bottom: 0.8rem; color: var(--text); }
+    p:last-child { margin-bottom: 0; }
+
+    .label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+    }
+
+    /* SCENARIOS */
+    .scenario {
+      background: var(--accent-light);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 0.8rem 1rem;
+      margin-bottom: 0.8rem;
+      font-style: italic;
+      color: var(--primary);
+    }
+    .scenario:last-child { margin-bottom: 0; }
+
+    /* COLOR SWATCHES */
+    .swatches {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+    .swatch {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.6rem 1rem;
+      flex: 1;
+      min-width: 200px;
+    }
+    .swatch-box {
+      width: 40px; height: 40px;
+      border-radius: 8px;
+      flex-shrink: 0;
+      border: 1px solid rgba(0,0,0,0.08);
+    }
+    .swatch-info strong { display: block; font-size: 0.9rem; }
+    .swatch-info small { color: var(--muted); font-size: 0.78rem; }
+
+    /* TYPOGRAPHY */
+    .type-sample {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem 1.2rem;
+      margin-bottom: 0.8rem;
+    }
+    .type-sample:last-child { margin-bottom: 0; }
+    .type-meta { font-size: 0.75rem; color: var(--muted); margin-bottom: 0.4rem; }
+    .sample-heading { font-family: var(--font-heading); font-size: 1.6rem; color: var(--primary); }
+    .sample-body { font-family: var(--font-body); font-size: 1rem; color: var(--text); }
+
+    /* WIREFRAMES */
+    .wireframes {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 1.5rem;
+      margin-top: 0.5rem;
+    }
+    @media (max-width: 600px) {
+      .wireframes { grid-template-columns: 1fr; }
+    }
+    .wireframe-box {
+      background: var(--bg);
+      border: 2px dashed var(--border);
+      border-radius: 12px;
+      padding: 1rem;
+    }
+    .wireframe-box h3 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      margin-bottom: 0.8rem;
+      font-family: var(--font-body);
+      font-weight: 600;
+    }
+    .wf-block {
+      background: var(--border);
+      border-radius: 6px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.68rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-mark">
+    <span>CF</span>
+    <strong style="font-family: var(--font-heading); font-size: 1.3rem; letter-spacing: -0.3px;">CapitalFlow</strong>
+  </div>
+  <h1>Site Plan</h1>
+  <p>WDD231 — Individual Website Project</p>
+</header>
+
+<main>
+
+  <!-- SITE NAME -->
+  <section>
+    <h2><span class="icon">🏷️</span> Site Name</h2>
+    <div class="label">Name</div>
+    <p><strong>CapitalFlow</strong></p>
+    <div class="label" style="margin-top:1rem;">Reason</div>
+    <p>"Capital" refers to financial assets and money management — a term widely recognised in formal finance and economics. "Flow" represents the movement of money: income coming in and expenses going out. Together, CapitalFlow conveys a professional, modern personal finance tool that helps users understand and control their financial flow on a monthly basis.</p>
+    <div class="label" style="margin-top:1rem;">Optional Domain</div>
+    <p><code>capitalflow.finance</code></p>
+  </section>
+
+  <!-- SITE PURPOSE -->
+  <section>
+    <h2><span class="icon">🎯</span> Site Purpose</h2>
+    <p>CapitalFlow is a client-side personal finance management website that helps individuals track their monthly income and expenses, monitor their remaining balance, and make informed financial decisions. The site provides:</p>
+    <ul style="padding-left:1.4rem; margin-top:0.5rem; color:var(--text);">
+      <li style="margin-bottom:0.4rem;">A <strong>Dashboard</strong> to register and categorize income and expenses, view real-time balance summaries, and visualize spending through interactive monthly charts.</li>
+      <li style="margin-bottom:0.4rem;">A <strong>Currency Converter</strong> powered by ExchangeRate-API, enabling users to work with multiple currencies in real time.</li>
+      <li style="margin-bottom:0.4rem;">A <strong>Financial Tips</strong> page offering curated advice on budgeting and saving, loaded dynamically from a local JSON file.</li>
+      <li>A live <strong>clock and date display</strong> showing the user's local time and timezone using JavaScript's native Date API.</li>
+    </ul>
+    <p style="margin-top:0.8rem;">All user data is persisted client-side via <strong>localStorage</strong>, ensuring a seamless experience across sessions without requiring a server or login system.</p>
+  </section>
+
+  <!-- SCENARIOS -->
+  <section>
+    <h2><span class="icon">💬</span> Scenarios</h2>
+    <p>The following questions represent what a typical CapitalFlow visitor might ask:</p>
+    <div class="scenario">"How much money do I have left this month after all my expenses?"</div>
+    <div class="scenario">"I receive my salary in USD but spend in MZN — how can I track my expenses in both currencies?"</div>
+    <div class="scenario">"How can I see which category I am spending the most money on each month?"</div>
+    <div class="scenario">"What practical tips can help me reduce unnecessary spending and save more?"</div>
+  </section>
+
+  <!-- COLOR SCHEME -->
+  <section>
+    <h2><span class="icon">🎨</span> Color Scheme</h2>
+    <div class="swatches">
+      <div class="swatch">
+        <div class="swatch-box" style="background:#0a2540;"></div>
+        <div class="swatch-info">
+          <strong>Deep Navy — #0a2540</strong>
+          <small>Header, footer, primary buttons, navigation background</small>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-box" style="background:#00c896;"></div>
+        <div class="swatch-info">
+          <strong>Emerald Green — #00c896</strong>
+          <small>Accent color, highlights, positive balance indicators, CTAs</small>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-box" style="background:#f4f7fb;"></div>
+        <div class="swatch-info">
+          <strong>Light Blue-Grey — #f4f7fb</strong>
+          <small>Page background, section backgrounds, card fills</small>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-box" style="background:#e84560;"></div>
+        <div class="swatch-info">
+          <strong>Alert Red — #e84560</strong>
+          <small>Negative balance, expense indicators, error states</small>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-box" style="background:#1a1a2e; border:1px solid #ccc;"></div>
+        <div class="swatch-info">
+          <strong>Dark Ink — #1a1a2e</strong>
+          <small>Body text, paragraphs, table content</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TYPOGRAPHY -->
+  <section>
+    <h2><span class="icon">🔤</span> Typography</h2>
+
+    <div class="type-sample">
+      <div class="type-meta">Font 1 — DM Serif Display · Used for: headings, site name, section titles</div>
+      <div class="sample-heading">CapitalFlow — Manage Your Money</div>
+    </div>
+
+    <div class="type-sample">
+      <div class="type-meta">Font 2 — DM Sans · Used for: body text, navigation, labels, table data, buttons</div>
+      <div class="sample-body">Track your monthly income and expenses with clarity. CapitalFlow helps you stay in control of your finances every day.</div>
+    </div>
+
+    <p style="margin-top:1rem; color:var(--muted); font-size:0.9rem;">Both fonts are from the DM (Display & Marketing) type family, ensuring visual harmony across all typographic contexts. DM Serif Display brings editorial authority to headings while DM Sans provides excellent readability at small sizes in data-dense UI elements.</p>
+  </section>
+
+  <!-- WIREFRAMES -->
+  <section>
+    <h2><span class="icon">📐</span> Wireframe — Home Page</h2>
+    <p style="margin-bottom:1rem;">Below are simplified layout wireframes for the home page (index.html) in mobile and desktop views.</p>
+
+    <div class="wireframes">
+
+      <!-- MOBILE -->
+      <div class="wireframe-box">
+        <h3>📱 Mobile (320px)</h3>
+
+        <div class="wf-block" style="height:36px; background:#0a2540; color:#fff; border-radius:6px;">HEADER / NAV ☰</div>
+
+        <div class="wf-block" style="height:80px; background:#e6fdf7; margin-top:6px;">
+          HERO<br/>Tagline + CTA Button
+        </div>
+
+        <div class="wf-block" style="height:50px; background:#d1dce8; margin-top:6px;">
+          🕐 Live Clock & Date
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px; margin-top:6px;">
+          <div class="wf-block" style="height:55px; background:#e6fdf7; margin:0;">💰 Income</div>
+          <div class="wf-block" style="height:55px; background:#fde6ea; margin:0;">📉 Expenses</div>
+        </div>
+
+        <div class="wf-block" style="height:55px; margin-top:6px; background:#d1dce8;">
+          Balance Summary
+        </div>
+
+        <div class="wf-block" style="height:70px; margin-top:6px;">
+          Features Overview
+        </div>
+
+        <div class="wf-block" style="height:30px; background:#0a2540; color:#fff; margin-top:6px; border-radius:6px;">FOOTER</div>
+      </div>
+
+      <!-- DESKTOP -->
+      <div class="wireframe-box">
+        <h3>🖥️ Desktop (1024px+)</h3>
+
+        <div class="wf-block" style="height:40px; background:#0a2540; color:#fff; border-radius:6px;">
+          LOGO &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NAV: Home | Dashboard | Tips | Contact
+        </div>
+
+        <div style="display:grid; grid-template-columns:1.5fr 1fr; gap:6px; margin-top:6px;">
+          <div class="wf-block" style="height:100px; background:#e6fdf7; margin:0;">
+            HERO<br/>Headline<br/>Subtext + CTA
+          </div>
+          <div class="wf-block" style="height:100px; background:#d1dce8; margin:0;">
+            🕐 Live Clock<br/>& Date / Timezone
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:6px; margin-top:6px;">
+          <div class="wf-block" style="height:60px; background:#e6fdf7; margin:0;">💰 Total Income</div>
+          <div class="wf-block" style="height:60px; background:#fde6ea; margin:0;">📉 Total Expenses</div>
+          <div class="wf-block" style="height:60px; background:#d1dce8; margin:0;">💵 Balance</div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px; margin-top:6px;">
+          <div class="wf-block" style="height:80px; margin:0;">
+            📊 Monthly Chart (Canvas)
+          </div>
+          <div class="wf-block" style="height:80px; margin:0;">
+            💱 Currency Converter
+          </div>
+        </div>
+
+        <div class="wf-block" style="height:55px; margin-top:6px;">
+          ✨ Features / How It Works Section
+        </div>
+
+        <div class="wf-block" style="height:32px; background:#0a2540; color:#fff; margin-top:6px; border-radius:6px;">
+          FOOTER — Links | Attributions | Video Demo
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PAGES -->
+  <section>
+    <h2><span class="icon">📄</span> Site Pages</h2>
+    <ul style="padding-left:1.4rem; color:var(--text);">
+      <li style="margin-bottom:0.6rem;"><strong>index.html</strong> — Landing page with hero section, live clock, balance summary cards, monthly chart preview, and currency converter widget.</li>
+      <li style="margin-bottom:0.6rem;"><strong>dashboard.html</strong> — Full transaction manager: add income/expenses by category, view full transaction table, monthly chart built with Canvas API, and filter by category.</li>
+      <li style="margin-bottom:0.6rem;"><strong>tips.html</strong> — Financial tips and advice page, with 15+ tips dynamically loaded from a local JSON file, displayed as cards with modal detail view.</li>
+      <li><strong>form-confirmation.html</strong> — Form action page (does not count toward 3-page requirement).</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>CapitalFlow &mdash; WDD231 Individual Website Project Site Plan</p>
+</footer>
+
+</body>
+</html>
