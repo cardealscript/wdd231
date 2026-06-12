@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "title": "Build a 3-Month Emergency Fund",
+    "category": "Saving",
+    "level": "Beginner",
+    "summary": "Set aside 3 to 6 months of living expenses in a liquid savings account for unexpected situations.",
+    "detail": "An emergency fund is the foundation of financial security. Start small — even saving 10% of your monthly income consistently will build this buffer over time. Keep it in a separate account to avoid spending it impulsively. Aim for at least 3 months of essential expenses: rent, food, transport, and utilities.",
+    "icon": "🏦",
+    "tag": "Priority"
+  },
+  {
+    "id": 2,
+    "title": "Follow the 50/30/20 Rule",
+    "category": "Budgeting",
+    "level": "Beginner",
+    "summary": "Allocate 50% of income to needs, 30% to wants, and 20% to savings and debt repayment.",
+    "detail": "The 50/30/20 rule is a simple budgeting framework. Needs include rent, utilities, food, and transport. Wants include dining out, entertainment, and subscriptions. The remaining 20% goes toward savings, investments, or paying off debt. Adjust the percentages based on your income level and financial goals.",
+    "icon": "📊",
+    "tag": "Framework"
+  },
+  {
+    "id": 3,
+    "title": "Track Every Expense",
+    "category": "Budgeting",
+    "level": "Beginner",
+    "summary": "Record all spending daily to identify patterns and eliminate unnecessary costs.",
+    "detail": "Most people underestimate their spending by 20–30%. Tracking every transaction — even small ones like coffee or transport — reveals hidden spending patterns. Use CapitalFlow's dashboard to categorize and review your expenses monthly. After 3 months you will have a clear picture of where your money goes.",
+    "icon": "📝",
+    "tag": "Habit"
+  },
+  {
+    "id": 4,
+    "title": "Pay Yourself First",
+    "category": "Saving",
+    "level": "Beginner",
+    "summary": "Transfer a fixed amount to savings immediately when you receive your income, before spending anything.",
+    "detail": "Paying yourself first reverses the typical pattern of saving what is left over. Decide on a fixed savings amount — even 5% to start — and move it to a separate account the moment your salary arrives. This creates a forced saving habit that builds wealth passively over time without requiring willpower.",
+    "icon": "💰",
+    "tag": "Habit"
+  },
+  {
+    "id": 5,
+    "title": "Avoid Lifestyle Inflation",
+    "category": "Mindset",
+    "level": "Intermediate",
+    "summary": "When your income increases, maintain your current lifestyle and invest the difference.",
+    "detail": "Lifestyle inflation — spending more as you earn more — is one of the biggest obstacles to building wealth. When you receive a raise or a new income source, resist upgrading your lifestyle immediately. Instead, redirect at least 50% of the increase to savings or investments. Your future self will thank you.",
+    "icon": "📈",
+    "tag": "Mindset"
+  },
+  {
+    "id": 6,
+    "title": "Eliminate High-Interest Debt First",
+    "category": "Debt",
+    "level": "Intermediate",
+    "summary": "Focus on paying off debts with the highest interest rates first to minimize total interest paid.",
+    "detail": "The avalanche method targets the debt with the highest interest rate first while making minimum payments on others. Once the highest-rate debt is cleared, redirect that payment to the next highest. This method saves the most money mathematically. Alternatively, the snowball method pays off the smallest balances first for psychological motivation.",
+    "icon": "🎯",
+    "tag": "Strategy"
+  },
+  {
+    "id": 7,
+    "title": "Negotiate Your Bills Annually",
+    "category": "Saving",
+    "level": "Beginner",
+    "summary": "Contact service providers each year to negotiate lower rates on internet, insurance, and subscriptions.",
+    "detail": "Most providers offer better rates to new customers but rarely adjust existing accounts. Call your internet, insurance, and phone providers annually and ask for a better rate or mention competitor pricing. This simple habit can save hundreds per year with minimal effort. Cancel subscriptions you no longer use actively.",
+    "icon": "📞",
+    "tag": "Quick Win"
+  },
+  {
+    "id": 8,
+    "title": "Automate Your Savings",
+    "category": "Saving",
+    "level": "Beginner",
+    "summary": "Set up automatic transfers to savings and investment accounts so saving happens without thinking.",
+    "detail": "Automation removes the need for willpower. Set up automatic transfers on payday so money moves to savings before you can spend it. Most banks allow you to schedule recurring transfers. Even automating a small amount builds the habit and the account balance grows consistently over time.",
+    "icon": "⚙️",
+    "tag": "Automation"
+  },
+  {
+    "id": 9,
+    "title": "Understand the Power of Compound Interest",
+    "category": "Investing",
+    "level": "Beginner",
+    "summary": "Money invested early grows exponentially over time as returns generate their own returns.",
+    "detail": "Compound interest is often called the eighth wonder of the world. When you invest, your returns generate additional returns. Over decades, this creates exponential growth. Investing $100 per month at 7% annual return for 30 years grows to over $120,000. Starting 10 years earlier would nearly triple that amount. Time in the market matters more than timing the market.",
+    "icon": "🌱",
+    "tag": "Education"
+  },
+  {
+    "id": 10,
+    "title": "Create Multiple Income Streams",
+    "category": "Income",
+    "level": "Advanced",
+    "summary": "Develop additional sources of income beyond your primary job to increase financial stability.",
+    "detail": "Relying on a single income source is financially risky. Consider freelancing, rental income, dividends, or monetizing a skill or hobby. Even a small additional income stream of $200 to $500 per month significantly accelerates savings and provides security if your primary income is disrupted. Start small and build gradually.",
+    "icon": "🌊",
+    "tag": "Strategy"
+  },
+  {
+    "id": 11,
+    "title": "Review Subscriptions Monthly",
+    "category": "Budgeting",
+    "level": "Beginner",
+    "summary": "Audit all recurring charges each month and cancel services you no longer actively use.",
+    "detail": "Subscription creep is a silent budget drain. Most people are paying for 2 to 3 services they forgot about. Set a monthly reminder to review all recurring charges on your bank statement. Cancel anything unused, and consider sharing family plans for streaming services. Even eliminating $50 in monthly subscriptions saves $600 per year.",
+    "icon": "🔍",
+    "tag": "Quick Win"
+  },
+  {
+    "id": 12,
+    "title": "Use the 24-Hour Rule for Large Purchases",
+    "category": "Mindset",
+    "level": "Beginner",
+    "summary": "Wait 24 hours before making any unplanned purchase over a set threshold to avoid impulse buying.",
+    "detail": "Impulse purchases are driven by emotion, not rational decision-making. Set a personal threshold — for example $50 — and require yourself to wait 24 hours before buying anything above that amount that was not planned. Most of the time the urge passes. This single habit can save thousands annually and reduce financial regret.",
+    "icon": "⏳",
+    "tag": "Habit"
+  },
+  {
+    "id": 13,
+    "title": "Invest in Low-Cost Index Funds",
+    "category": "Investing",
+    "level": "Intermediate",
+    "summary": "Index funds offer broad market exposure at minimal cost and consistently outperform most active funds.",
+    "detail": "Studies consistently show that low-cost index funds outperform the majority of actively managed funds over the long term. They provide instant diversification across hundreds of companies. The key advantage is low fees — even a 1% fee difference compounds significantly over 30 years. Start with a broad market index fund and contribute regularly regardless of market conditions.",
+    "icon": "📉",
+    "tag": "Investing"
+  },
+  {
+    "id": 14,
+    "title": "Set Specific Financial Goals",
+    "category": "Mindset",
+    "level": "Beginner",
+    "summary": "Define clear, measurable financial goals with deadlines to stay motivated and on track.",
+    "detail": "Vague goals like 'save more money' rarely work. Replace them with specific targets: 'Save $5,000 for an emergency fund by December.' Break large goals into monthly milestones. Write them down and review them regularly. Research shows that written goals are significantly more likely to be achieved. CapitalFlow's dashboard can help you track progress monthly.",
+    "icon": "🎯",
+    "tag": "Planning"
+  },
+  {
+    "id": 15,
+    "title": "Separate Needs from Wants",
+    "category": "Budgeting",
+    "level": "Beginner",
+    "summary": "Clearly distinguish essential expenses from discretionary spending to make intentional financial decisions.",
+    "detail": "Before every purchase, ask: is this a need or a want? Needs are essential for survival and basic functioning — shelter, food, utilities, transport to work. Wants improve comfort and enjoyment but are not strictly necessary. This distinction does not mean eliminating wants entirely, but making conscious choices about how much of your income they consume.",
+    "icon": "⚖️",
+    "tag": "Framework"
+  },
+  {
+    "id": 16,
+    "title": "Build Credit Responsibly",
+    "category": "Debt",
+    "level": "Intermediate",
+    "summary": "Use credit strategically to build a strong credit history while avoiding high-interest debt traps.",
+    "detail": "Good credit unlocks lower interest rates on loans, better rental terms, and financial flexibility. Build credit by paying bills on time, keeping credit utilization below 30%, and not opening too many accounts at once. Check your credit report annually for errors. A strong credit score can save you thousands over a lifetime in lower borrowing costs.",
+    "icon": "💳",
+    "tag": "Credit"
+  },
+  {
+    "id": 17,
+    "title": "Plan for Irregular Expenses",
+    "category": "Budgeting",
+    "level": "Intermediate",
+    "summary": "Budget monthly for annual costs like insurance, car maintenance, and taxes to avoid financial surprises.",
+    "detail": "Many financial emergencies are actually predictable irregular expenses — car registration, annual insurance premiums, school fees, or appliance replacement. Calculate all your annual non-monthly expenses, divide by 12, and set aside that amount each month in a separate sinking fund account. When the expense arrives, the money is ready and your budget stays intact.",
+    "icon": "📅",
+    "tag": "Planning"
+  },
+  {
+    "id": 18,
+    "title": "Learn Basic Tax Planning",
+    "category": "Investing",
+    "level": "Advanced",
+    "summary": "Understand tax-advantaged accounts and legal strategies to minimize your tax burden and maximize returns.",
+    "detail": "Tax planning is not just for the wealthy. Understanding which expenses are tax-deductible, using tax-advantaged retirement accounts, and timing income and deductions strategically can significantly increase your effective income. Consult a tax professional if your finances are complex. Even basic tax awareness can save meaningful amounts annually.",
+    "icon": "📋",
+    "tag": "Advanced"
+  },
+  {
+    "id": 19,
+    "title": "Diversify Your Investments",
+    "category": "Investing",
+    "level": "Intermediate",
+    "summary": "Spread investments across different asset classes to reduce risk and improve long-term returns.",
+    "detail": "Never put all your eggs in one basket. Diversification across stocks, bonds, real estate, and cash reduces the impact of any single investment performing poorly. Geographic diversification — investing in both local and international markets — provides additional protection against local economic downturns. Rebalance your portfolio annually to maintain your target allocation.",
+    "icon": "🌍",
+    "tag": "Investing"
+  },
+  {
+    "id": 20,
+    "title": "Review Your Finances Monthly",
+    "category": "Mindset",
+    "level": "Beginner",
+    "summary": "Schedule a monthly financial review to assess progress, adjust the budget, and plan for the upcoming month.",
+    "detail": "A monthly financial review is one of the most impactful habits for long-term financial health. Spend 30 minutes each month reviewing your income, expenses, savings rate, and net worth. Compare actual spending to your budget. Identify what worked and what did not. Adjust categories and limits for the next month. Use CapitalFlow's dashboard to make this process fast and visual.",
+    "icon": "🔄",
+    "tag": "Habit"
+  }
+]

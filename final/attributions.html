@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CapitalFlow Attributions — Sources and credits for content, icons, fonts, and APIs used in this project.">
+  <meta name="author" content="Cardeal Felisberto">
+  <title>Attributions — CapitalFlow</title>
+  <link rel="icon" href="images/icon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <style>
+    .attr-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 3rem;
+    }
+    .attr-wrapper h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin: 1.5rem 0 .5rem;
+      padding-bottom: .35rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .attr-wrapper ul {
+      list-style: disc;
+      padding-left: 1.4rem;
+      margin-top: .5rem;
+    }
+    .attr-wrapper li {
+      font-size: .9rem;
+      color: var(--text-muted);
+      margin-bottom: .4rem;
+      line-height: 1.6;
+    }
+    .attr-wrapper a { color: var(--accent-dark); text-decoration: underline; }
+    .attr-wrapper a:hover { color: var(--accent); }
+    .attr-intro {
+      font-size: .9rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="CapitalFlow Home">
+        <img src="images/logo.svg" alt="CapitalFlow Logo" width="200" loading="lazy">
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="hamburger" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks" role="list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+          <li><a href="tips.html" class="nav-link">Tips</a></li>
+          <li><a href="contact.html" class="nav-link nav-cta">Get Started</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <h1>Attributions</h1>
+      <p>Credits for resources used in this project.</p>
+    </div>
+
+    <div class="attr-wrapper">
+      <p class="attr-intro">CapitalFlow was built as an individual academic project for WDD231. The following external resources were used in its development.</p>
+
+      <h2>Icons</h2>
+      <ul>
+        <li>All icons are from <a href="https://icons.getbootstrap.com" target="_blank" rel="noopener">Bootstrap Icons</a> — MIT License, by The Bootstrap Authors.</li>
+      </ul>
+
+      <h2>Typography</h2>
+      <ul>
+        <li><a href="https://fonts.google.com/specimen/IBM+Plex+Sans" target="_blank" rel="noopener">IBM Plex Sans</a> — Open Font License, by IBM. Served via Google Fonts.</li>
+      </ul>
+
+      <h2>APIs &amp; Data</h2>
+      <ul>
+        <li><a href="https://www.exchangerate-api.com" target="_blank" rel="noopener">ExchangeRate-API</a> — Real-time and historical currency exchange rates. Free tier used.</li>
+        <li><a href="https://www.frankfurter.app" target="_blank" rel="noopener">Frankfurter API</a> — Open-source exchange rate API based on European Central Bank data.</li>
+      </ul>
+
+      <h2>Financial Tips Content</h2>
+      <ul>
+        <li>All financial tips were written originally for this project, inspired by general personal finance principles from sources including <a href="https://www.investopedia.com" target="_blank" rel="noopener">Investopedia</a> and <a href="https://www.nerdwallet.com" target="_blank" rel="noopener">NerdWallet</a>.</li>
+      </ul>
+
+      <h2>Tools &amp; Technologies</h2>
+      <ul>
+        <li>HTML5, CSS3, and JavaScript (ES Modules) — core web technologies, no frameworks used.</li>
+        <li>Canvas API — native browser API used for chart rendering.</li>
+        <li>localStorage API — native browser API used for client-side data persistence.</li>
+        <li><a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a> — free static site hosting.</li>
+        <li><a href="https://code.visualstudio.com" target="_blank" rel="noopener">Visual Studio Code</a> — code editor.</li>
+      </ul>
+
+      <h2>Validation &amp; Testing</h2>
+      <ul>
+        <li><a href="https://validator.w3.org" target="_blank" rel="noopener">W3C HTML Validator</a> — HTML validation.</li>
+        <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener">W3C CSS Validator</a> — CSS validation.</li>
+        <li><a href="https://wave.webaim.org" target="_blank" rel="noopener">WAVE Accessibility Tool</a> — accessibility evaluation.</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo.svg" alt="CapitalFlow" width="100" loading="lazy">
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="tips.html">Tips</a>
+        <a href="attributions.html">Attributions</a>
+      </nav>
+      <p class="footer-copy">
+        &copy; <span id="footerYear"></span> CapitalFlow &mdash;
+        <a href="YOUR_VIDEO_LINK" target="_blank" rel="noopener" class="video-link">
+          <img src="images/icons/camera-video-fill.svg" alt="" width="14" height="14" aria-hidden="true">
+          Video Demo
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <script type="module">
+    // Hamburger
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks   = document.getElementById('navLinks');
+    menuToggle?.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuToggle.classList.toggle('open', isOpen);
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+    // Footer year
+    document.getElementById('footerYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
