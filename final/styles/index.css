@@ -1,0 +1,6 @@
+/* =============================================
+   CAPITALFLOW — index.css
+   Styles specific to the home page (index.html)
+   ============================================= */
+
+.hero { background-color: var(--bg); }
