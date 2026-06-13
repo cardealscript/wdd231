@@ -87,9 +87,6 @@ function renderTips() {
       class="tip-card fade-up"
       data-id="${tip.id}"
       style="animation-delay:${index * 0.04}s"
-      tabindex="0"
-      role="button"
-      aria-label="Read more about ${tip.title}"
     >
       <div class="tip-card-top">
         <span class="tip-icon" aria-hidden="true">${tip.icon}</span>
@@ -111,12 +108,9 @@ function renderTips() {
     </article>
   `).join('');
 
-  // Event listeners on cards
+  // Event listeners on cards — click anywhere on card opens modal
   grid.querySelectorAll('.tip-card').forEach(card => {
     card.addEventListener('click', () => openModal(parseInt(card.dataset.id)));
-    card.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') openModal(parseInt(card.dataset.id));
-    });
   });
 
   // Read more buttons (stop propagation to avoid double open)
