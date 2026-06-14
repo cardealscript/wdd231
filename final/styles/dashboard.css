@@ -329,3 +329,7 @@
   display: none;
 }
 .tx-empty.visible { display: block; }
+/* Modal spacing helpers */
+.field-group-mt { margin-top: .75rem; }
+.form-actions-mt { margin-top: 1.25rem; }
+.modal-text { color: var(--text-muted); font-size: .9rem; margin-bottom: 1.25rem; }

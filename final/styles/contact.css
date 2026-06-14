@@ -216,3 +216,5 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+/* Info card button spacing */
+.info-card-btn { margin-top: .75rem; }

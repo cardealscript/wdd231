@@ -1,0 +1,35 @@
+/* =============================================
+   CAPITALFLOW — attributions.css
+   ============================================= */
+.attr-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+.attr-wrapper h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 1.5rem 0 .5rem;
+  padding-bottom: .35rem;
+  border-bottom: 1px solid var(--border);
+}
+.attr-wrapper ul {
+  list-style: disc;
+  padding-left: 1.4rem;
+  margin-top: .5rem;
+}
+.attr-wrapper li {
+  font-size: .9rem;
+  color: var(--text-muted);
+  margin-bottom: .4rem;
+  line-height: 1.6;
+}
+.attr-wrapper a { color: var(--accent-dark); text-decoration: underline; }
+.attr-wrapper a:hover { color: var(--accent); }
+.attr-intro {
+  font-size: .9rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
