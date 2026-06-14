@@ -3,4 +3,12 @@
    Styles specific to the home page (index.html)
    ============================================= */
 
-.hero { background-color: var(--bg); }
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.625rem 1.25rem 0.625rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}

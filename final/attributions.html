@@ -45,6 +45,20 @@
       line-height: 1.7;
     }
   </style>
+
+  <script type="module">
+    // Hamburger
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks   = document.getElementById('navLinks');
+    menuToggle?.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuToggle.classList.toggle('open', isOpen);
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+    // Footer year
+    document.getElementById('footerYear').textContent = new Date().getFullYear();
+  </script>
+  
 </head>
 <body>
 
@@ -136,17 +150,5 @@
     </div>
   </footer>
 
-  <script type="module">
-    // Hamburger
-    const menuToggle = document.getElementById('menuToggle');
-    const navLinks   = document.getElementById('navLinks');
-    menuToggle?.addEventListener('click', () => {
-      const isOpen = navLinks.classList.toggle('open');
-      menuToggle.classList.toggle('open', isOpen);
-      menuToggle.setAttribute('aria-expanded', String(isOpen));
-    });
-    // Footer year
-    document.getElementById('footerYear').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
