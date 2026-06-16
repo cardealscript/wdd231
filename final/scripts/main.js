@@ -3,7 +3,7 @@
 // ES Module — index.html
 // =============================================
 
-const API_KEY = '7c8085947ee5ddd73fef57aa';
+const API_KEY = '4b620f2e613ed83461791ff5';
 
 const CURRENCY_NAMES = {
   USD: 'US Dollar', EUR: 'Euro', GBP: 'British Pound',
