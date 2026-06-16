@@ -91,7 +91,7 @@ function renderTips() {
       <div class="tip-card-top">
         <span class="tip-icon" aria-hidden="true">${tip.icon}</span>
         <div class="tip-badges">
-          <span class="badge badge-${tip.category.toLowerCase()}">${tip.category}</span>
+          <span class="cf-badge cf-badge-${tip.category.toLowerCase()}">${tip.category}</span>
         </div>
       </div>
 
@@ -136,15 +136,15 @@ function openModal(id) {
 
   const catEl  = document.getElementById('tipModalCategory');
   catEl.textContent = tip.category;
-  catEl.className   = `badge badge-${tip.category.toLowerCase()}`;
+  catEl.className   = `cf-badge cf-badge-${tip.category.toLowerCase()}`;
 
   const lvlEl  = document.getElementById('tipModalLevel');
   lvlEl.textContent = tip.level;
-  lvlEl.className   = 'badge badge-level';
+  lvlEl.className   = 'cf-badge cf-badge-level';
 
   const tagEl  = document.getElementById('tipModalTag');
   tagEl.textContent = tip.tag;
-  tagEl.className   = 'badge badge-tag';
+  tagEl.className   = 'cf-badge cf-badge-tag';
 
   document.getElementById('tipModal').classList.add('open');
 

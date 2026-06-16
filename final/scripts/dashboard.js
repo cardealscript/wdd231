@@ -135,8 +135,8 @@ function renderTransactions() {
     <tr>
       <td>${new Date(t.date + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</td>
       <td>${t.description || '—'}</td>
-      <td><span class="badge badge-${t.type === 'income' ? 'income' : 'expense'}">${t.category}</span></td>
-      <td><span class="badge badge-${t.type === 'income' ? 'income' : 'expense'}">${t.type.charAt(0).toUpperCase() + t.type.slice(1)}</span></td>
+      <td><span class="cf-badge cf-badge-${t.type === 'income' ? 'income' : 'expense'}">${t.category}</span></td>
+      <td><span class="cf-badge cf-badge-${t.type === 'income' ? 'income' : 'expense'}">${t.type.charAt(0).toUpperCase() + t.type.slice(1)}</span></td>
       <td class="tx-amount-${t.type}">${t.type === 'income' ? '+' : '-'}${fmt(t.amount)}</td>
       <td>
         <button class="btn-delete" data-id="${t.id}" aria-label="Delete transaction">
@@ -436,7 +436,7 @@ document.getElementById('saveCategoryBtn')?.addEventListener('click', () => {
 });
 
 // Close modals on overlay click
-document.querySelectorAll('.modal-overlay').forEach(overlay => {
+document.querySelectorAll('.cf-modal-overlay').forEach(overlay => {
   overlay.addEventListener('click', e => {
     if (e.target === overlay) overlay.classList.remove('open');
   });

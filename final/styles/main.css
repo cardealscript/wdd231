@@ -77,7 +77,7 @@ body {
 img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; text-decoration: none; }
 ul { list-style: none; }
-button { cursor: pointer; font-family: var(--font-body); border: none; background: none; color: inherit; }
+button { cursor: pointer; font-family: var(--font-body); border: none; background: none; }
 
 /* --- TYPOGRAPHY --- */
 h1, h2, h3, h4 {
@@ -88,7 +88,7 @@ h1, h2, h3, h4 {
 }
 
 /* --- BUTTONS --- */
-.btn {
+.cf-btn {
   display: inline-flex;
   align-items: center;
   gap: .45rem;
@@ -101,14 +101,14 @@ h1, h2, h3, h4 {
   white-space: nowrap;
   border: none;
 }
-.btn-primary { background: var(--accent); color: var(--primary); }
-.btn-primary:hover { background: var(--accent-dark); transform: translateY(-1px); box-shadow: var(--shadow-md); }
-.btn-ghost { background: transparent; color: var(--primary); border: 2px solid var(--border); }
-.btn-ghost:hover { border-color: var(--accent); color: var(--accent-dark); }
-.btn-lg { padding: .85rem 2rem; font-size: 1rem; }
-.btn-danger { background: var(--danger); color: var(--bg-card); }
-.btn-danger:hover { background: var(--danger-text); }
-.btn-sm { padding: .4rem .9rem; font-size: .82rem; }
+.cf-btn-primary { background: var(--accent); color: var(--primary); }
+.cf-btn-primary:hover { background: var(--accent-dark); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+.cf-btn-ghost { background: transparent; color: var(--primary); border: 2px solid var(--border); }
+.cf-btn-ghost:hover { border-color: var(--accent); color: var(--accent-dark); }
+.cf-btn-lg { padding: .85rem 2rem; font-size: 1rem; }
+.cf-btn-danger { background: var(--danger); color: var(--bg-card); }
+.cf-btn-danger:hover { background: var(--danger-text); }
+.cf-btn-sm { padding: .4rem .9rem; font-size: .82rem; }
 
 /* =============================================
    HEADER / NAV
@@ -205,8 +205,8 @@ h1, h2, h3, h4 {
     gap: .25rem;
   }
   .nav-links.open { display: flex; }
-  .nav-link { padding: .7rem 1rem; border-radius: var(--radius-sm); }
-  .nav-cta { text-align: center; margin-left: 0; margin-top: .25rem; }
+  .nav-link { padding: .75rem 1rem; border-radius: var(--radius-sm); display: block;}
+  .nav-cta { text-align: center; margin-left: 0; margin-top: .75rem; }
 }
 
 /* =============================================
@@ -220,7 +220,7 @@ h1, h2, h3, h4 {
 .hero-badge {
   display: inline-flex;
   align-items: center;
-  gap: .35rem;
+  gap: .5rem;
   background: var(--accent-light);
   color: var(--accent-text);
   font-weight: 600;
@@ -634,7 +634,7 @@ h1, h2, h3, h4 {
 /* =============================================
    MODAL
    ============================================= */
-.modal-overlay {
+.cf-modal-overlay {
   display: none;
   position: fixed;
   inset: 0;
@@ -646,8 +646,8 @@ h1, h2, h3, h4 {
   justify-content: center;
   padding: 1rem;
 }
-.modal-overlay.open { display: flex; }
-.modal {
+.cf-modal-overlay.open { display: flex; }
+.cf-modal {
   background: var(--bg-card);
   border-radius: var(--radius-lg);
   padding: 2rem;
@@ -661,7 +661,7 @@ h1, h2, h3, h4 {
   from { opacity: 0; transform: scale(.95) translateY(10px); }
   to   { opacity: 1; transform: scale(1) translateY(0); }
 }
-.modal-close {
+.cf-modal-close {
   position: absolute;
   top: 1rem; right: 1rem;
   width: 30px; height: 30px;
@@ -672,28 +672,28 @@ h1, h2, h3, h4 {
   display: flex; align-items: center; justify-content: center;
   transition: background .2s;
 }
-.modal-close:hover { background: var(--danger-light); color: var(--danger-text); }
-.modal h3 { font-size: 1.2rem; margin-bottom: .85rem; font-weight: 600; }
+.cf-modal-close:hover { background: var(--danger-light); color: var(--danger-text); }
+.cf-modal h3 { font-size: 1.2rem; margin-bottom: .85rem; font-weight: 600; }
 
 /* =============================================
    BADGES
    ============================================= */
-.badge {
+.cf-badge {
   display: inline-block;
   padding: .18rem .65rem;
   border-radius: 50px;
   font-size: .72rem;
   font-weight: 600;
 }
-.badge-income     { background: var(--accent-light);  color: var(--accent-text); }
-.badge-expense    { background: var(--danger-light);  color: var(--danger-text); }
-.badge-saving     { background: var(--warning-light); color: var(--warning-text); }
-.badge-investment { background: var(--info-light);    color: var(--info-text); }
+.cf-badge-income     { background: var(--accent-light);  color: var(--accent-text); }
+.cf-badge-expense    { background: var(--danger-light);  color: var(--danger-text); }
+.cf-badge-saving     { background: var(--warning-light); color: var(--warning-text); }
+.cf-badge-investment { background: var(--info-light);    color: var(--info-text); }
 
 /* =============================================
    UTILITIES
    ============================================= */
-.sr-only {
+.cf-sr-only {
   position: absolute; width: 1px; height: 1px;
   padding: 0; margin: -1px; overflow: hidden;
   clip: rect(0,0,0,0); white-space: nowrap; border: 0;
@@ -710,3 +710,7 @@ h1, h2, h3, h4 {
   to   { opacity: 1; transform: translateY(0); }
 }
 .fade-up { animation: fadeUp .4s ease both; }
+
+/* =============================================
+   MOBILE SMALL (≤ 480px)
+   ============================================= */

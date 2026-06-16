@@ -197,14 +197,14 @@
 .btn-tip-detail img { filter: invert(25%) sepia(50%) saturate(500%) hue-rotate(65deg) brightness(70%); }
 
 /* BADGES */
-.badge-saving     { background: var(--accent-light);  color: var(--accent-text); }
-.badge-budgeting  { background: var(--info-light);    color: var(--info-text); }
-.badge-investing  { background: var(--warning-light); color: var(--warning-text); }
-.badge-debt       { background: var(--danger-light);  color: var(--danger-text); }
-.badge-income     { background: var(--accent-light);  color: var(--accent-text); }
-.badge-mindset    { background: var(--info-light);    color: var(--info-text); }
-.badge-level      { background: var(--bg); color: var(--text-subtle); border: 1px solid var(--border); }
-.badge-tag        { background: var(--primary); color: var(--primary-text); }
+.cf-badge-saving     { background: var(--accent-light);  color: var(--accent-text); }
+.cf-badge-budgeting  { background: var(--info-light);    color: var(--info-text); }
+.cf-badge-investing  { background: var(--warning-light); color: var(--warning-text); }
+.cf-badge-debt       { background: var(--danger-light);  color: var(--danger-text); }
+.cf-badge-income     { background: var(--accent-light);  color: var(--accent-text); }
+.cf-badge-mindset    { background: var(--info-light);    color: var(--info-text); }
+.cf-badge-level      { background: var(--bg); color: var(--text-subtle); border: 1px solid var(--border); }
+.cf-badge-tag        { background: var(--primary); color: var(--primary-text); }
 
 /* =============================================
    EMPTY / LOADING STATES
@@ -231,7 +231,7 @@
 /* =============================================
    TIP MODAL
    ============================================= */
-.tip-modal { max-width: 580px; }
+.tip-cf-modal { max-width: 580px; }
 
 .tip-modal-header {
   display: flex;

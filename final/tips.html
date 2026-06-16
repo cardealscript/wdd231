@@ -93,7 +93,7 @@
       <div class="tips-empty" id="tipsEmpty" hidden>
         <img src="images/icons/search.svg" alt="" width="32" height="32" aria-hidden="true">
         <p>No tips found for your search.</p>
-        <button class="btn btn-ghost btn-sm" id="clearSearch">Clear filters</button>
+        <button class="cf-btn cf-btn-ghost cf-btn-sm" id="clearSearch">Clear filters</button>
       </div>
 
       <!-- LOADING STATE -->
@@ -128,16 +128,16 @@
   </footer>
 
   <!-- TIP DETAIL MODAL -->
-  <div class="modal-overlay" id="tipModal" role="dialog" aria-modal="true" aria-labelledby="tipModalTitle">
-    <div class="modal tip-modal">
-      <button class="modal-close" id="tipModalClose" aria-label="Close modal">✕</button>
+  <div class="cf-modal-overlay" id="tipModal" role="dialog" aria-modal="true" aria-labelledby="tipModalTitle">
+    <div class="cf-modal tip-cf-modal">
+      <button class="cf-modal-close" id="tipModalClose" aria-label="Close modal">✕</button>
       <div class="tip-modal-header">
         <span class="tip-modal-icon" id="tipModalIcon"></span>
         <div>
           <div class="tip-modal-badges">
-            <span class="badge" id="tipModalCategory"></span>
-            <span class="badge badge-level" id="tipModalLevel"></span>
-            <span class="badge badge-tag" id="tipModalTag"></span>
+            <span class="cf-badge" id="tipModalCategory"></span>
+            <span class="cf-badge cf-badge-level" id="tipModalLevel"></span>
+            <span class="cf-badge cf-badge-tag" id="tipModalTag"></span>
           </div>
           <h3 id="tipModalTitle"></h3>
         </div>
@@ -146,7 +146,7 @@
       <div class="tip-modal-divider"></div>
       <p class="tip-modal-detail" id="tipModalDetail"></p>
       <div class="tip-modal-footer">
-        <a href="dashboard.html" class="btn btn-primary btn-sm">Apply in Dashboard →</a>
+        <a href="dashboard.html" class="cf-btn cf-btn-primary cf-btn-sm">Apply in Dashboard →</a>
       </div>
     </div>
   </div>

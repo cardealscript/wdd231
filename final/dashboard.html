@@ -169,11 +169,11 @@
               </div>
 
               <div class="form-actions">
-                <button type="submit" class="btn btn-primary">
+                <button type="submit" class="cf-btn cf-btn-primary">
                   <img src="images/icons/plus-circle-fill.svg" alt="" width="16" height="16" aria-hidden="true">
                   Add Transaction
                 </button>
-                <button type="button" class="btn btn-ghost btn-sm" id="addCategoryBtn">
+                <button type="button" class="cf-btn cf-btn-ghost cf-btn-sm" id="addCategoryBtn">
                   + New Category
                 </button>
               </div>
@@ -221,7 +221,7 @@
               <select id="filterCategory" aria-label="Filter by category">
                 <option value="all">All Categories</option>
               </select>
-              <button class="btn btn-danger btn-sm" id="clearAllBtn">Clear All</button>
+              <button class="cf-btn cf-btn-danger cf-btn-sm" id="clearAllBtn">Clear All</button>
             </div>
           </div>
 
@@ -234,7 +234,7 @@
                   <th scope="col">Category</th>
                   <th scope="col">Type</th>
                   <th scope="col">Amount</th>
-                  <th scope="col"><span class="sr-only">Actions</span></th>
+                  <th scope="col"><span class="cf-sr-only">Actions</span></th>
                 </tr>
               </thead>
               <tbody id="txBody">
@@ -273,37 +273,37 @@
   </footer>
 
   <!-- ADD CATEGORY MODAL -->
-  <div class="modal-overlay" id="categoryModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="modal">
-      <button class="modal-close" id="modalClose" aria-label="Close modal">✕</button>
+  <div class="cf-modal-overlay" id="categoryModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="cf-modal">
+      <button class="cf-modal-close" id="modalClose" aria-label="Close modal">✕</button>
       <h3 id="modalTitle">Add New Category</h3>
       <div class="field-group">
         <label for="newCategoryName">Category Name</label>
         <input type="text" id="newCategoryName" placeholder="e.g. Gym, Savings..." maxlength="30">
       </div>
-      <div class="field-group field-group-mt">
+      <div class="field-group" style="margin-top:.75rem;">
         <label for="newCategoryType">Type</label>
         <select id="newCategoryType">
           <option value="income">Income</option>
           <option value="expense">Expense</option>
         </select>
       </div>
-      <div class="form-actions form-actions-mt">
-        <button class="btn btn-primary" id="saveCategoryBtn">Save Category</button>
-        <button class="btn btn-ghost btn-sm" id="cancelModalBtn">Cancel</button>
+      <div class="form-actions" style="margin-top:1.25rem;">
+        <button class="cf-btn cf-btn-primary" id="saveCategoryBtn">Save Category</button>
+        <button class="cf-btn cf-btn-ghost cf-btn-sm" id="cancelModalBtn">Cancel</button>
       </div>
     </div>
   </div>
 
   <!-- DELETE CONFIRM MODAL -->
-  <div class="modal-overlay" id="deleteModal" role="dialog" aria-modal="true" aria-labelledby="deleteModalTitle">
-    <div class="modal">
-      <button class="modal-close" id="deleteModalClose" aria-label="Close">✕</button>
+  <div class="cf-modal-overlay" id="deleteModal" role="dialog" aria-modal="true" aria-labelledby="deleteModalTitle">
+    <div class="cf-modal">
+      <button class="cf-modal-close" id="deleteModalClose" aria-label="Close">✕</button>
       <h3 id="deleteModalTitle">Delete Transaction</h3>
-      <p class="modal-text">Are you sure you want to delete this transaction? This action cannot be undone.</p>
+      <p style="color:var(--text-muted);font-size:.9rem;margin-bottom:1.25rem;">Are you sure you want to delete this transaction? This action cannot be undone.</p>
       <div class="form-actions">
-        <button class="btn btn-danger" id="confirmDeleteBtn">Delete</button>
-        <button class="btn btn-ghost btn-sm" id="cancelDeleteBtn">Cancel</button>
+        <button class="cf-btn cf-btn-danger" id="confirmDeleteBtn">Delete</button>
+        <button class="cf-btn cf-btn-ghost cf-btn-sm" id="cancelDeleteBtn">Cancel</button>
       </div>
     </div>
   </div>
